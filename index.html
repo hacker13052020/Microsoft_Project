@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+  <title>Face Recognition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="logo">Face <span>.</span> </a>
+    <ul class="navigation">
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#about">Recognize</a></li>
+      <li><a href="#expert">About Me</a></li>
+      <li><a href="#testimonials">Testimonial</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+
+  <section class="banner" id="banner">
+    <div class="content">
+      <h2>Recognize the Face</h2>
+      <p>
+        No need of asking your movie partner about the name <br> of superhero just take a screenshot and
+        upload the <br> image and you will be able to know who is that particular face.
+      </p>
+      <a href="#" class="btn">Website Description</a>
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <div class="row">
+      <div class="col50">
+        <h2 class="titleText"><span>R</span>ecognize</h2>
+        <div>
+          <label for="imageUpload" class="custom-imageUpload">
+            Upload Image
+          </label>
+          <input id="imageUpload" type="file" />
+        </div>
+      </div>
+      <div class="col50">
+        <div class="imgBx">
+          <img src="back/face.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="expert" id="expert">
+    <div class="title">
+      <h2 class="titleText">About <span>M</span>e</h2>
+    </div>
+    <div class="content">
+      <div class="box">
+        <div class="imgBx">
+          <img src="back/me.jpeg" alt="">
+        </div>
+        <div class="text">
+          <h3>Aditi Sinha</h3>
+          <p>Sophomore At NITP<br>Enthusiast <br>Web Developer <br>4 star coder at HackerRank</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials" id="testimonials">
+    <div class="title white">
+      <h2 class="titleText">They <span>S</span>aid About Us</h2>
+      <p>Amazing app</p>
+    </div>
+    <div class="content">
+      <div class="box">
+        <div class="imgBx">
+          <img src="back/women.jpg" alt="women">
+        </div>
+        <div class="text">
+          <p>
+            Using this was an amazing experience as sometimes when i go with my friends to watch a movie I was unable to know that what is the name of the character. And asking my friends again and again is annoying to them. Therefore when I say this web App I was very happy knowing about it.
+          </p>
+          <h3>Medha</h3>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="back/mens.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>
+           This is an amazing ideology based app as sometimes when i go with my friends to watch a movie I was unable to know that what is the name of the character. Therefore after knowing about this app I was very happy.
+          </p>
+          <h3>Ravindra</h3>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+          <img src="back/women2.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>
+            i just loved this app. Amazing performance and have a great experience with it
+          </p>
+          <h3>Anmola</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <div class="title ">
+      <h2 class="titleText"><span>C</span>ontact Us</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, eveniet!</p>
+    </div>
+    <div class="contactForm">
+      <h3>Send Message</h3>
+      <div class="inputBox">
+        <input type="text" placeholder="Name">
+      </div>
+      <div class="inputBox">
+        <input type="text" placeholder="Email">
+      </div>
+      <div class="inputBox">
+        <textarea placeholder="Name"></textarea>
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Send">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="copyrightText">
+    <p>Copyright @2022 <a href="#">Face Recognintion</a>. All Rights Reserved</p>
+  </div>
+
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+  </script>
+</body>
+
+</html>
